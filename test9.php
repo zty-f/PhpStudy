@@ -2,7 +2,7 @@
 
 
 $courseOne=array("0","1");
-$courseTwo=array("1","2,3");
+$courseTwo=array("1","2","3");
 var_dump($courseOne);
 var_dump($courseTwo);
 var_dump($courseOne[0]);
@@ -12,6 +12,8 @@ var_dump(!isset($courseTwo[0]));
     //过滤掉不限的属性设置
     $courseOne = array_filter($courseOne);
     $courseTwo = array_filter($courseTwo);
+    var_dump($courseOne);
+    var_dump($courseTwo);
 var_dump($courseOne[0]);
 var_dump($courseTwo[0]);
 var_dump(!isset($courseOne[0]));
