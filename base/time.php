@@ -20,3 +20,10 @@ echo date("Y 年 m 月 d 日 H 点 i 分 s 秒")  . PHP_EOL;
 // 指定时间
 $time = strtotime("2018-01-18 08:08:08");  // 将指定日期转成时间戳
 echo date("Y-m-d H:i:s", $time)  . PHP_EOL;
+echo "</br>-------------------</br>";
+$date=date_create();
+echo date_timestamp_get($date);
+echo "</br>-------------------</br>";
+print_r(localtime());
+echo "</br>-------------------</br>";
+print_r(localtime(time(),true));
